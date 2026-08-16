@@ -80,8 +80,42 @@ footer{background:linear-gradient(90deg,var(--vino2),var(--vino));color:#fff;pad
   .help-btn{justify-self:start}
 }
 @media(max-width:620px){
-  .nav{grid-template-columns:1fr 85px;padding:10px 15px}
-  nav{display:none}
+
+  .nav{
+    grid-template-columns:1fr 85px;
+    padding:10px 15px;
+  }
+
+  nav{
+    display:flex;
+    grid-column:1/-1;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    gap:18px;
+    overflow-x:auto;
+    padding:8px 2px 6px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+
+  nav::-webkit-scrollbar{
+    display:none;
+  }
+
+  nav a{
+    white-space:nowrap;
+    font-size:13px;
+    padding:10px 2px;
+  }
+
+  .unrc img{
+    max-height:54px;
+  }
+
+  .ludm img{
+    max-height:70px;
+  }
+}
   .unrc img{max-height:54px}
   .ludm img{max-height:70px}
   .hero-inner{padding:46px 22px 52px}
